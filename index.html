@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seive Analysis</title>
+    <link rel="stylesheet" href="assests/styles/style.css">
+</head>
+<body>
+    
+
+    <div class = maincontainer>
+        <div class="toppart">
+            <input type="number" class="seivecount" placeholder="How many seive you want to use? ">
+            <button class="submit-btn" onclick="submit()">Submit</button>
+
+        </div>
+
+
+        
+        <div id="options">
+
+        </div>
+        <div id="optionbuttons">
+
+        </div>
+        <div id="inputs-ul">
+        </div>
+        <div class="paragraph">
+            <p id="intro">
+                The primary objective of this website is to facilitate engineers in conducting seive analysis. Once the number of sieves is specified, users will be prompted to provide the relevant amounts for the analysis. If values have been submitted previously, the site will retrieve them automatically and pre-fill the inputs. Upon submitting the data, the website will compute the cumulative values above and below the sieve, and generate a 2D graph to visualize the results.
+            </p>
+        </div>
+
+    </div>
+    <div class="after">
+        <div class="firstRow"></div>
+        <table class="middlepart">
+
+            
+        </table>
+        <div class="sum"></div>
+        <div class="bottomPart">
+            <Button id="bottomPart" onclick="calculate()">Submit</Button>
+            <button id="draw-btn" onclick="draw()">Draw</button>
+        </div>
+    <div id="myplot">
+    </div>
+
+    </div>
+    <script src="scripts/index.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+body{
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+    background-image: url("https://images.unsplash.com/photo-1564483335100-3413b45dbd37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=748&q=80");
+    background-size:auto;
+}   
+.maincontainer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    padding: 6px;
+}
+.seivecount{
+    padding: 15px;
+    width: 400px;
+    height: 7px;
+    margin-top: 20%;
+}
+#inputs-ul{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+
+}
+
+#inputs-ul input{
+    margin: 5px;
+    width: 40%;
+}
+#options{
+    background-color: transparent !important;
+    color: aqua;
+    display: flex;
+    border-radius: 6px;
+    margin:  16px 0px;
+    border: solid 1px aqua;
+    
+}
+#options h3{
+    margin: 50px;
+}
+#optionbuttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 0;
+    width: 50%;
+}
+#optionbuttons button{
+    display: flex;
+    justify-content: space-between;
+}
+.after {
+    display: none;
+}
+
+.after.active{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.middlepart{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align-last: center;
+}
+
+.middlepart th,tr{
+    width: 600px;
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+
+
+}
+
+.middlepart input{
+    width: 90%;
+}
+.middlepart td{
+    background-color: rgb(54, 66, 64);
+    justify-content: center;
+    align-items: center;
+    
+}
+.fraction-amount{
+    display: flex;
+    flex-direction: column;
+}
+
+.firstRow{
+    background-color: green;
+    display: flex;
+    justify-content: space-evenly;
+}
+.submit:disabled{
+    background-color: brown;
+}
+#intro{
+    text-justify: center;
+    text-align: justify;
+    letter-spacing: 3px;
+    width: 100%;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.paragraph{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+button{
+    background-color: transparent;
+    color: aqua;
+    border: solid 1px aqua;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 71, 71, 0.329);
+}
+.sum{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    height: 30px;
+    color: aqua;
+}
